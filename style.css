@@ -1,33 +1,90 @@
+** {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.ultimas-postagens {
+  width: 90%;
+  max-width: 2000px;
+  margin: 40px auto;
+}
+
 .titulo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 100px;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
 }
 
-.botao {
-    background-color: black;
-    color: rgb(255, 255, 255);
-    padding: 15px;
-    border-radius: 15px;
+.titulo h1 {
+  font-size: 29px;
+  font-weight: 700;
+  padding-bottom: 4px;
 }
 
-.imagem1, .imagem2 {
-    display: flex;
-    flex-direction: column;
-    padding-right: 800px;
-    padding-left: 100px;
-    border-radius: 15px;
-}
-.img {
-    border-radius: 15px;
-    
+.btn-todas {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 600;
 }
 
+.conteudo {
+  display: flex;
+  gap: 32px;
+}
 
-.container {
-    display: inline;
+.principais {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.post img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.info {
+  margin-top: 10px;
+}
+
+.data {
+  font-size: 14px; 
+  color: gray;
+}
+
+.texto {
+  margin-top: 6px;
+  color: #555;
+}
+
+.laterais {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.mini-post {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.mini-post img {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.mini-post h4 {
+  font-size: 15px;
+  font-weight: 600;
 }
